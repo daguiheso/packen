@@ -1,0 +1,14 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "template packen",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --no-source-map --watch sass/**.scss assets/css/index.css"
+  },
+  "author": "@daguiheso",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.16.1"
+  }
+}
