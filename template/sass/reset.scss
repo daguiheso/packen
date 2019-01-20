@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import 'variables';
+
 body, html {
 	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
+	max-width: 2000px;
+	margin: 0 auto;
+	background: #f5f5fb;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 a,p,ul,ol,img,h1,h2,h3,h4,h5,h6,figure {
@@ -23,8 +33,16 @@ button {
 	outline: none;
 }
 
-* {
-	box-sizing: border-box;
+::placeholder {
+  color: $color-blue;;
+}
+
+:-ms-input-placeholder {
+ color: $color-blue;
+}
+
+::-ms-input-placeholder {
+ color: $color-blue;
 }
 
 %center {
@@ -33,6 +51,12 @@ button {
 	justify-content: center;
 }
 
+%ellipsisOne {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
 // display: block;
 // max-width: 200px;
 %ellipsis {
