@@ -7,16 +7,18 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Packen</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="./assets/css/normalize.css">
+	<link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
-<body>
+<body class="shopping">
 	<nav class="navHeader">
 		<div class="navHeader__left">
-			<span></span>
+			<i class="fas fa-angle-left"></i>
 		</div>
 		<h3 class="navHeader__title">Shopping Cart</h3>
 		<div class="navHeader__right">
-			<span></span>
+			<i class="far fa-trash-alt"></i>
 		</div>
 	</nav>
 
@@ -24,17 +26,23 @@
 		<div class="card">
 			<div class="card__content">
 				<figure class="card__image card__image--square">
-					<img src="" alt="">
+					<img src="./assets/images/image1-250x250.jpg" alt="">
 				</figure>
 				<div class="box">
-					<h4 class="card__title">Double tatami mat...</h4>
-					<p class="card__Text">White, M</p>
-					<div class="box">
-						<p>$72.0</p>
+					<div class="box__top">
+						<h4 class="card__title">Double tatami mat...</h4>
+						<p class="card__text">White, M</p>
+					</div>
+					<div class="box__bottom">
+						<p class="price">$72.0</p>
 						<div class="counter">
-							<button class="counter__less">-</button>
+							<button class="counter__btn">
+								<i class="fas fa-minus"></i>
+							</button>
 							<div class="counter__number">2</div>
-							<button class="counter__more">-</button>
+							<button class="counter__btn">
+								<i class="fas fa-plus"></i>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -43,17 +51,73 @@
 		<div class="card">
 			<div class="card__content">
 				<figure class="card__image card__image--square">
-					<img src="" alt="">
+					<img src="./assets/images/image2-250x250.jpg" alt="">
 				</figure>
 				<div class="box">
-					<h4 class="card__title">Double tatami mat...</h4>
-					<p class="card__Text">White, M</p>
-					<div class="box">
-						<p>$72.0</p>
+					<div class="box__top">
+						<h4 class="card__title">Pure white water drop...</h4>
+						<p class="card__text">White, M</p>
+					</div>
+					<div class="box__bottom">
+						<p class="price">$72.0</p>
 						<div class="counter">
-							<button class="counter__less">-</button>
+							<button class="counter__btn">
+								<i class="fas fa-minus"></i>
+							</button>
 							<div class="counter__number">2</div>
-							<button class="counter__more">-</button>
+							<button class="counter__btn">
+								<i class="fas fa-plus"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card__content">
+				<figure class="card__image card__image--square">
+					<img src="./assets/images/image3-250x250.jpg" alt="">
+				</figure>
+				<div class="box">
+					<div class="box__top">
+						<h4 class="card__title">Double tatami mat...</h4>
+						<p class="card__text">White, M</p>
+					</div>
+					<div class="box__bottom">
+						<p class="price">$72.0</p>
+						<div class="counter">
+							<button class="counter__btn">
+								<i class="fas fa-minus"></i>
+							</button>
+							<div class="counter__number">2</div>
+							<button class="counter__btn">
+								<i class="fas fa-plus"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card">
+			<div class="card__content">
+				<figure class="card__image card__image--square">
+					<img src="./assets/images/image4-250x250.jpg" alt="">
+				</figure>
+				<div class="box">
+					<div class="box__top">
+						<h4 class="card__title">Double tatami mat...</h4>
+						<p class="card__text">White, M</p>
+					</div>
+					<div class="box__bottom">
+						<p class="price">$72.0</p>
+						<div class="counter">
+							<button class="counter__btn">
+								<i class="fas fa-minus"></i>
+							</button>
+							<div class="counter__number">2</div>
+							<button class="counter__btn">
+								<i class="fas fa-plus"></i>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -74,17 +138,19 @@
 				<div class="table__col">White, S</div>
 				<div class="table__col">$120.0</div>
 			</div>
-			<div class="table__row">
+			<div class="table__row table__row--margin-bottom">
 				<div class="table__col">Express charge</div>
 				<div class="table__col">COD</div>
 				<div class="table__col">$10.00</div>
 			</div>
-			<div class="table__row">
+			<div class="table__row table__row--border-top table__row--padding-top">
 				<div class="table__col">Total</div>
 				<div class="table__col">$202.0</div>
 			</div>
 		</div>
-		<button class="btn btn--color-blue">$202.0 Pay</button>
+		<div class="panel__bottom">
+			<button class="btn btn--color-blue">$202.0 Pay</button>
+		</div>
 	</div>
 
 </body>
