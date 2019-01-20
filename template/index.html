@@ -6,14 +6,18 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Packen</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" href="./assets/css/normalize.css">
+	<link rel="stylesheet" href="./assets/css/index.css">
 </head>
-<body>
+<body class="store">
 	<nav class="bar">
 		<div class="search">
-			<span class="search__icon"></span>
-			<input type="text" placeholder="Search the product">
+			<i class="fas fa-search search__icon"></i>
+			<input class="search__input" type="text" placeholder="Search the product">
 		</div>
-		<span class="message"></span>
+		<i class="far fa-comment message">
+			<div class="state"><div></div></div>
+		</i>
 	</nav>
 	<ul class="barTabs">
 		<li class="barTabs__tab">brand</li>
@@ -28,9 +32,9 @@
 				<div class="card">
 					<div class="card__content">
 						<figure class="card__image card__image--circle">
-							<img src="" alt="">
+							<img src="./assets/images/model.jpeg" alt="">
 						</figure>
-						<h4 class="card_title">Elegant</h4>
+						<h4 class="card__title">Elegant</h4>
 						<p class="card__text">Star Designer</p>
 						<button class="btn btn--color-blue">view</button>
 					</div>
@@ -40,9 +44,9 @@
 				<div class="card">
 					<div class="card__content">
 						<figure class="card__image card__image--circle">
-							<img src="" alt="">
+							<img src="./assets/images/house.jpeg" alt="">
 						</figure>
-						<h4 class="card_title">Marclano</h4>
+						<h4 class="card__title">Marclano</h4>
 						<p class="card__text">Classic heritage</p>
 						<button class="btn btn--color-blue">view</button>
 					</div>
@@ -52,9 +56,9 @@
 				<div class="card">
 					<div class="card__content">
 						<figure class="card__image card__image--circle">
-							<img src="" alt="">
+							<img src="./assets/images/zucalli.jpeg" alt="">
 						</figure>
-						<h4 class="card_title">Zucalli</h4>
+						<h4 class="card__title">Zucalli</h4>
 						<p class="card__text">Tile collocation</p>
 						<button class="btn btn--color-blue">view</button>
 					</div>
@@ -64,9 +68,9 @@
 				<div class="card">
 					<div class="card__content">
 						<figure class="card__image card__image--circle">
-							<img src="" alt="">
+							<img src="./assets/images/performance.jpeg" alt="">
 						</figure>
-						<h4 class="card_title">Performance</h4>
+						<h4 class="card__title">Performance</h4>
 						<p class="card__text">Deliveries</p>
 						<button class="btn btn--color-blue">view</button>
 					</div>
@@ -74,58 +78,63 @@
 			</li>
 		</ul>
 
-		<div class="card">
+		<div class="card card--full-image">
 			<figure class="card__image card__image--full">
-				<img src="" alt="">
+				<img src="./assets/images/image1-400x270.jpg" alt="">
 			</figure>
-			<div class="card__content">
+			<div class="card__content card__content--flex">
 				<figure class="card__image card__image--circle">
-					<img src="" alt="">
+					<img src="./assets/images/spense.png" alt="">
 				</figure>
-				<h3 class="card__title">Synergla Tech</h3>
-				<p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea neque recusandae ducimus? Doloribus eveniet saepe reiciendis cum perspiciatis.</p>
-				<div>
-					<p>120</p>
+				<div class="center">
+					<h3 class="card__title">Synergla Tech</h3>
+					<p class="card__text">Lorem ipsum dolor sit amet consectetur, elit.</p>
+				</div>
+				<div class="right">
+					<p class="price">120</p>
+					<button class="btn btn--color-blue">like</button>
+				</div>
+			</div>
+		</div>
+		<div class="card card--full-image">
+			<figure class="card__image card__image--full">
+				<img src="./assets/images/image2-400x270.jpg" alt="">
+			</figure>
+			<div class="card__content card__content--flex">
+				<figure class="card__image card__image--circle">
+					<img src="./assets/images/logo-1.jpg" alt="">
+				</figure>
+				<div class="center">
+					<h3 class="card__title">Synergla Tech</h3>
+					<p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+				</div>
+				<div class="right">
+					<p class="price">120</p>
 					<button class="btn btn--color-blue">like</button>
 				</div>
 			</div>
 		</div>
 
-		<div class="card">
-			<figure class="card__image card__image--full">
-				<img src="" alt="">
-			</figure>
-			<div class="card__content">
-				<figure class="card__image card__image--circle">
-					<img src="" alt="">
-				</figure>
-				<h3 class="card__title">Synergla Tech</h3>
-				<p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea neque recusandae ducimus? Doloribus eveniet saepe reiciendis cum perspiciatis.</p>
-				<div>
-					<p>120</p>
-					<button class="btn btn--color-blue">like</button>
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<nav class="navFooter">
 		<ul class="navFooter__list">
 			<li class="item">
-				<span class="item__icon"></span>
+				<i class="fas fa-home item__icon"></i>
 				<p class="item__text">Home</p>
 			</li>
 			<li class="item">
-				<span class="item__icon"></span>
+				<i class="fas fa-store item__icon"></i>
 				<p class="item__text">Store</p>
 			</li>
 			<li class="item">
-				<span class="item__icon"></span>
+				<i class="fas fa-shopping-cart item__icon"></i>
 				<p class="item__text">Shopcart</p>
 			</li>
 			<li class="item">
-				<span class="item__icon"></span>
+				<i class="fas fa-user item__icon"></i>
 				<p class="item__text">My</p>
+				<div class="state"><div></div></div>
 			</li>
 		</ul>
 	</nav>

@@ -1,0 +1,34 @@
+body, html {
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+}
+
+a,p,ul,ol,img,h1,h2,h3,h4,h5,h6,figure {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 1em;
+}
+
+img {
+	display: block;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+%center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
