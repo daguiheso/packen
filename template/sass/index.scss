@@ -137,6 +137,51 @@
 	}
 }
 
+.detail {
+	.arrow {
+		position: absolute;
+		left: 14px;
+		top: 14px;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background: rgba(88, 109, 148, .8);
+		color: white;
+		font-size: 1.5em;
+		@extend %center;
+	}
+	.imageTop {
+		height: 150px;
+		background: url('../images/image-full.jpg') 0 -4px no-repeat;
+		background-size: cover;
+	}
+	.box {
+		padding: 14px;
+		text-align: center;
+	}
+	.content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.card {
+			margin-bottom: 18px;
+			width: calc(50% - 7px);
+			&__title {
+				margin-top: 12px;
+				font-size: 1.2em;
+			}
+			&__text {
+				margin: 5px 0 8px;
+				@extend %ellipsis;
+			}
+			.price {
+				font-size: 1.2em;
+				text-align: left;
+			}
+		}
+	}
+}
+
 .navHeader {
 	position: fixed;
 	top: 0;
@@ -391,4 +436,14 @@
 	&__col {
 		padding: 8px 0 8px 0;
 	}
+}
+
+.title {
+	color: $color-blue;
+	font-size: 1.4em;
+	font-weight: 500;
+}
+.text {
+	font-size: .92em;
+	color: $color-gray;
 }
