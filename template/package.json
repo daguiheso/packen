@@ -4,7 +4,7 @@
   "description": "template packen",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --no-source-map --watch sass/**.scss assets/css/index.css"
+    "sass": "sass --no-source-map --watch sass:assets/css"
   },
   "author": "@daguiheso",
   "license": "ISC",
