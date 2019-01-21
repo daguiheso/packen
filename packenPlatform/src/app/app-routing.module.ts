@@ -16,7 +16,8 @@ const routes: Routes = [
   {
     path: 'brand/:id',
     component: DetailBrandComponent
-  }
+  },
+  { path: '**', component: StoreComponent }
 ];
 
 @NgModule({

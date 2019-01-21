@@ -20,8 +20,16 @@
 			position: relative;
 			cursor: pointer;
 			@extend %center;
+			outline: none;
 			transition: .4s;
 			&:hover, &:focus, &:active {
+				background: $color-blue;
+				color: white;
+				.state {
+					background: $color-blue;
+				}
+			}
+			&--active {
 				background: $color-blue;
 				color: white;
 				.state {

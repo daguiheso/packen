@@ -10,6 +10,8 @@
 	background: rgba(88, 109, 148, .8);
 	color: white;
 	font-size: 1.5em;
+	cursor: pointer;
+	outline: none;
 	@extend %center;
 }
 
