@@ -291,34 +291,6 @@
 	}
 }
 
-.navHeader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	box-shadow: -1px -1px 6px 0px rgba(206,205,205,0.75);
-	background: white;
-	color: $color-blue;
-	z-index: 2;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 0 10px;
-	i {
-		font-size: 1.7em;
-	}
-	&__left {
-		padding: 14px;
-	}
-	&__right {
-		padding: 14px;
-	}
-	&__title {
-		font-weight: 700;
-		font-size: 1.4em;
-	}
-}
-
 .price {
 	color: $color-yellow;
 	text-align: center;
@@ -365,12 +337,13 @@
 	}
 }
 
+.text {
+	font-size: .92em;
+	color: $color-gray;
+}
+
 .title {
 	color: $color-blue;
 	font-size: 1.4em;
 	font-weight: 500;
-}
-.text {
-	font-size: .92em;
-	color: $color-gray;
 }
