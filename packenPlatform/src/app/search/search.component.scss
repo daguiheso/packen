@@ -1,0 +1,26 @@
+@import '../../sass/reset.scss';
+@import '../../sass/variables.scss';
+
+.search {
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	background: #f1f1f1;
+	width: 100%;
+	overflow: hidden;
+	&__input {
+		color: $color-blue;
+		background: #f1f1f1;
+		border: none;
+		height: 36px;
+		outline: none;
+		width: 100%;
+	}
+	&__icon {
+		font-size: 1.3em;
+		margin: 0 10px;
+		&::before {
+			color: $color-blue;
+		}
+	}
+}

@@ -1,8 +1,5 @@
 <nav class="bar">
-  <div class="search">
-    <i class="fas fa-search search__icon"></i>
-    <input class="search__input" type="text" placeholder="Search the product">
-  </div>
+  <packen-search></packen-search>
   <i class="far fa-comment message">
     <div class="state">
       <div></div>
@@ -18,307 +15,36 @@
 
 <div class="content">
   <ul class="list">
-    <li class="list__item">
+    <li class="list__item" *ngFor="let item of listBrand">
       <div class="card">
         <div class="card__content">
           <figure class="card__image card__image--circle">
-            <img src="./assets/images/model.jpeg" alt="">
+            <img src="./assets/images/{{item.image}}" alt="{{item.title}}">
           </figure>
-          <h4 class="card__title">Elegant</h4>
-          <p class="card__text">Star Designer</p>
-          <button class="btn btn--color-blue">view</button>
-        </div>
-      </div>
-    </li>
-    <li class="list__item">
-      <div class="card">
-        <div class="card__content">
-          <figure class="card__image card__image--circle">
-            <img src="./assets/images/house.jpeg" alt="">
-          </figure>
-          <h4 class="card__title">Marclano</h4>
-          <p class="card__text">Classic heritage</p>
-          <button class="btn btn--color-blue">view</button>
-        </div>
-      </div>
-    </li>
-    <li class="list__item">
-      <div class="card">
-        <div class="card__content">
-          <figure class="card__image card__image--circle">
-            <img src="./assets/images/zucalli.jpeg" alt="">
-          </figure>
-          <h4 class="card__title">Zucalli</h4>
-          <p class="card__text">Tile collocation</p>
-          <button class="btn btn--color-blue">view</button>
-        </div>
-      </div>
-    </li>
-    <li class="list__item">
-      <div class="card">
-        <div class="card__content">
-          <figure class="card__image card__image--circle">
-            <img src="./assets/images/performance.jpeg" alt="">
-          </figure>
-          <h4 class="card__title">Performance</h4>
-          <p class="card__text">Deliveries</p>
-          <button class="btn btn--color-blue">view</button>
-        </div>
-      </div>
-    </li>
-    <li class="list__item">
-      <div class="card">
-        <div class="card__content">
-          <figure class="card__image card__image--circle">
-            <img src="./assets/images/crossant.jpeg" alt="">
-          </figure>
-          <h4 class="card__title">Crossant Felipine</h4>
-          <p class="card__text">Postman fetch</p>
-          <button class="btn btn--color-blue">view</button>
-        </div>
-      </div>
-    </li>
-    <li class="list__item">
-      <div class="card">
-        <div class="card__content">
-          <figure class="card__image card__image--circle">
-            <img src="./assets/images/perindex.jpeg" alt="">
-          </figure>
-          <h4 class="card__title">Peer index</h4>
-          <p class="card__text">Quaternum fenix</p>
-          <button class="btn btn--color-blue">view</button>
-        </div>
-      </div>
-    </li>
-    <li class="list__item">
-      <div class="card">
-        <div class="card__content">
-          <figure class="card__image card__image--circle">
-            <img src="./assets/images/croquis.png" alt="">
-          </figure>
-          <h4 class="card__title">Croquis style</h4>
-          <p class="card__text">Major continuon</p>
+          <h4 class="card__title">{{item.title}}</h4>
+          <p class="card__text">{{item.text}}</p>
           <button class="btn btn--color-blue">view</button>
         </div>
       </div>
     </li>
   </ul>
 
-  <div class="card card--image-full">
-    <div class="card__image"></div>
+  <div class="card card--image-full" *ngFor="let item of listBrandFull">
+    <div class="card__image" [ngStyle]="{'background-image': 'url(' + item.fullImage + ')'}"></div>
     <div class="card__content card__content--flex">
       <figure class="card__image card__image--circle">
-        <img src="./assets/images/spense.png" alt="">
+        <img src="./assets/images/{{item.smallImage}}" alt="">
       </figure>
       <div class="center">
-        <h3 class="card__title">Synergla Tech</h3>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur, elit.</p>
+        <h3 class="card__title">{{item.title}}</h3>
+        <p class="card__text">{{item.text}}</p>
       </div>
       <div class="right">
-        <p class="price">120</p>
+        <p class="price">{{item.price}}</p>
         <button class="btn btn--color-blue">like</button>
       </div>
     </div>
   </div>
-  <div class="card card--image-full">
-    <div class="card__image"></div>
-    <div class="card__content card__content--flex">
-      <figure class="card__image card__image--circle">
-        <img src="./assets/images/logo-1.jpg" alt="">
-      </figure>
-      <div class="center">
-        <h3 class="card__title">Villound Square</h3>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <div class="right">
-        <p class="price">120</p>
-        <button class="btn btn--color-blue">like</button>
-      </div>
-    </div>
-  </div>
-  <div class="card card--image-full">
-    <div class="card__image"></div>
-    <div class="card__content card__content--flex">
-      <figure class="card__image card__image--circle">
-        <img src="./assets/images/yecols.png" alt="">
-      </figure>
-      <div class="center">
-        <h3 class="card__title">Ye-col organize</h3>
-        <p class="card__text">Team ipsum doliriem sit amet conse, elit.</p>
-      </div>
-      <div class="right">
-        <p class="price">120</p>
-        <button class="btn btn--color-blue">like</button>
-      </div>
-    </div>
-  </div>
-  <div class="card card--image-full">
-    <div class="card__image"></div>
-    <div class="card__content card__content--flex">
-      <figure class="card__image card__image--circle">
-        <img src="./assets/images/citizien.png" alt="">
-      </figure>
-      <div class="center">
-        <h3 class="card__title">Citizien</h3>
-        <p class="card__text">Lorem ipsum dolor sit amet conse, elit.</p>
-      </div>
-      <div class="right">
-        <p class="price">120</p>
-        <button class="btn btn--color-blue">like</button>
-      </div>
-    </div>
-  </div>
-  <div class="card card--image-full">
-    <div class="card__image"></div>
-    <div class="card__content card__content--flex">
-      <figure class="card__image card__image--circle">
-        <img src="./assets/images/logo-1.jpg" alt="">
-      </figure>
-      <div class="center">
-        <h3 class="card__title">Villound Square</h3>
-        <p class="card__text">Lorem ipsum dolor sit amet conse, elit.</p>
-      </div>
-      <div class="right">
-        <p class="price">120</p>
-        <button class="btn btn--color-blue">like</button>
-      </div>
-    </div>
-  </div>
-  <div class="card card--image-full">
-    <div class="card__image"></div>
-    <div class="card__content card__content--flex">
-      <figure class="card__image card__image--circle">
-        <img src="./assets/images/logo-1.jpg" alt="">
-      </figure>
-      <div class="center">
-        <h3 class="card__title">Villound Square</h3>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <div class="right">
-        <p class="price">120</p>
-        <button class="btn btn--color-blue">like</button>
-      </div>
-    </div>
-  </div>
-  <div class="card card--image-full">
-    <div class="card__image"></div>
-    <div class="card__content card__content--flex">
-      <figure class="card__image card__image--circle">
-        <img src="./assets/images/logo-1.jpg" alt="">
-      </figure>
-      <div class="center">
-        <h3 class="card__title">Villound Square</h3>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <div class="right">
-        <p class="price">120</p>
-        <button class="btn btn--color-blue">like</button>
-      </div>
-    </div>
-  </div>
-  <div class="card card--image-full">
-    <div class="card__image"></div>
-    <div class="card__content card__content--flex">
-      <figure class="card__image card__image--circle">
-        <img src="./assets/images/logo-1.jpg" alt="">
-      </figure>
-      <div class="center">
-        <h3 class="card__title">Villound Square</h3>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <div class="right">
-        <p class="price">120</p>
-        <button class="btn btn--color-blue">like</button>
-      </div>
-    </div>
-  </div>
-  <div class="card card--image-full">
-    <div class="card__image"></div>
-    <div class="card__content card__content--flex">
-      <figure class="card__image card__image--circle">
-        <img src="./assets/images/logo-1.jpg" alt="">
-      </figure>
-      <div class="center">
-        <h3 class="card__title">Villound Square</h3>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <div class="right">
-        <p class="price">120</p>
-        <button class="btn btn--color-blue">like</button>
-      </div>
-    </div>
-  </div>
-  <div class="card card--image-full">
-    <div class="card__image"></div>
-    <div class="card__content card__content--flex">
-      <figure class="card__image card__image--circle">
-        <img src="./assets/images/logo-1.jpg" alt="">
-      </figure>
-      <div class="center">
-        <h3 class="card__title">Villound Square</h3>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <div class="right">
-        <p class="price">120</p>
-        <button class="btn btn--color-blue">like</button>
-      </div>
-    </div>
-  </div>
-  <div class="card card--image-full">
-    <div class="card__image"></div>
-    <div class="card__content card__content--flex">
-      <figure class="card__image card__image--circle">
-        <img src="./assets/images/logo-1.jpg" alt="">
-      </figure>
-      <div class="center">
-        <h3 class="card__title">Villound Square</h3>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <div class="right">
-        <p class="price">120</p>
-        <button class="btn btn--color-blue">like</button>
-      </div>
-    </div>
-  </div>
-  <div class="card card--image-full">
-    <div class="card__image"></div>
-    <div class="card__content card__content--flex">
-      <figure class="card__image card__image--circle">
-        <img src="./assets/images/logo-1.jpg" alt="">
-      </figure>
-      <div class="center">
-        <h3 class="card__title">Villound Square</h3>
-        <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-      <div class="right">
-        <p class="price">120</p>
-        <button class="btn btn--color-blue">like</button>
-      </div>
-    </div>
-  </div>
-
 </div>
 
-<nav class="navFooter">
-  <ul class="navFooter__list">
-    <li class="item">
-      <i class="fas fa-home item__icon"></i>
-      <p class="item__text">Home</p>
-    </li>
-    <li class="item">
-      <i class="fas fa-store item__icon"></i>
-      <p class="item__text">Store</p>
-    </li>
-    <li class="item">
-      <i class="fas fa-shopping-cart item__icon"></i>
-      <p class="item__text">Shopcart</p>
-    </li>
-    <li class="item">
-      <i class="fas fa-user item__icon"></i>
-      <p class="item__text">My</p>
-      <div class="state">
-        <div></div>
-      </div>
-    </li>
-  </ul>
-</nav>
+<packen-nav-footer></packen-nav-footer>
