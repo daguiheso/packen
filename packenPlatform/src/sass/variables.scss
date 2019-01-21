@@ -1,3 +1,25 @@
 $color-blue: #586d94;
 $color-yellow: #ffda07;
 $color-gray: #c3c4c5;
+
+%center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+%ellipsisOne {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+// display: block;
+// max-width: 200px;
+%ellipsis {
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

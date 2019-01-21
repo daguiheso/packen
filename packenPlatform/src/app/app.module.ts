@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { StoreComponent } from './store/store.component';
 import { NavFooterComponent } from './nav-footer/nav-footer.component';
 import { SearchComponent } from './search/search.component';
+import { ShoppingComponent } from './shopping/shopping.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StoreComponent,
     NavFooterComponent,
-    SearchComponent
+    SearchComponent,
+    ShoppingComponent
   ],
   imports: [
     BrowserModule,
