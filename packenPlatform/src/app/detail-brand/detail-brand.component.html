@@ -1,0 +1,19 @@
+<span class="arrow">
+  <i class="fas fa-angle-left"></i>
+</span>
+<div class="imageTop"></div>
+<div class="box">
+  <h2 class="title">Marclano</h2>
+  <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium nisi, medi ever revisious
+    delectus impedit provident, nisi, delectus impedit provident.</p>
+</div>
+<div class="content">
+  <div class="card" *ngFor="let item of listBrands">
+    <div class="card__content">
+      <div class="card__image card__image--square" [ngStyle]="{'background-image': 'url(' + item.image + ')'}"></div>
+      <h3 class="card__title">{{item.title}}</h3>
+      <p class="card__text">{{item.text}}</p>
+      <p class="price">{{item.price}}</p>
+    </div>
+  </div>
+</div>
